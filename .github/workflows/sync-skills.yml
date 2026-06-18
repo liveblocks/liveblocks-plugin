@@ -1,0 +1,41 @@
+name: Sync skills
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out plugin
+        uses: actions/checkout@v4
+
+      - name: Check out skills
+        uses: actions/checkout@v4
+        with:
+          repository: liveblocks/skills
+          path: liveblocks-skills
+
+      - name: Sync skills
+        run: |
+          rsync -a --delete liveblocks-skills/skills/ skills/
+
+      - name: Commit changes
+        run: |
+          git config user.name "liveblocks-bot"
+          git config user.email "hello@liveblocks.io"
+
+          git add skills
+
+          if git diff --cached --quiet; then
+            echo "No skill changes to sync."
+            exit 0
+          fi
+
+          git commit -m "Sync skills from liveblocks/skills"
+          git push
