@@ -8,7 +8,7 @@
     "url": "https://liveblocks.io"
   },
   "homepage": "https://liveblocks.io",
-  "repository": "https://github.com/liveblocks/skills",
+  "repository": "https://github.com/liveblocks/liveblocks-plugin",
   "license": "Apache-2.0",
   "keywords": [
     "liveblocks",

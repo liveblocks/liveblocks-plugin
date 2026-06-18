@@ -75,20 +75,10 @@ How do I pass custom headers to my auth endpoint?
 Why is my Y.Map growing so large?
 ```
 
-## Plugins
+## Source code
 
-This repo serves as a plugin for multiple platforms:
+The plugin package is available in
+[`liveblocks/liveblocks-plugin`](https://github.com/liveblocks/liveblocks-plugin).
 
-- **Claude Code** — `.claude-plugin/`
-- **Cursor** — `.cursor-plugin/`
-- **OpenAI Codex** — `.codex-plugin/`
-
-`liveblocks/skills` is the source of truth. The
-`liveblocks/liveblocks-plugin` repository is generated from this repo so users
-can install from a plugin-named repository.
-
-## Repository layout
-
-OpenAI Codex marketplaces expect a plugin folder referenced from
-`.agents/plugins/marketplace.json`. To avoid duplicating files,
-`plugins/liveblocks` is a symlink to this repository root.
+Standalone skills are available in
+[`liveblocks/skills`](https://github.com/liveblocks/skills).
