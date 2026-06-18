@@ -18,11 +18,10 @@ Includes an MCP server for tool access.
 
 ### OpenAI Codex
 
-Install the Codex plugin from the public marketplace source:
+Install the Codex plugin:
 
 ```bash
-codex plugin marketplace add liveblocks/skills
-codex plugin add liveblocks@liveblocks
+npx plugins add liveblocks/skills
 ```
 
 After installation, start a new Codex thread so the Liveblocks skills and MCP
