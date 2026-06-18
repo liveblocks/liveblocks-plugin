@@ -10,8 +10,8 @@
 # Liveblocks plugin
 
 The Liveblocks plugin helps AI coding assistants write Liveblocks and Yjs code.
-It bundles agent skills and MCP server configuration, and is available for
-Claude Code, Cursor, and OpenAI Codex.
+It bundles agent skills, MCP server configuration, and instruction files for
+AI coding tools.
 
 ## Install
 
@@ -26,18 +26,24 @@ skills and MCP server are available.
 
 ## Supported tools
 
-| Tool | Status |
-|---|---|
+| Tool                                                          | Status    |
+| ------------------------------------------------------------- | --------- |
 | [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | Supported |
-| [OpenAI Codex](https://openai.com/codex) | Supported |
-| [Cursor](https://www.cursor.com/) | Supported |
+| [OpenAI Codex](https://openai.com/codex)                      | Supported |
+| [Cursor](https://www.cursor.com/)                             | Supported |
+| [Grok Build](https://x.ai/news/grok-build-cli)                | Supported |
+| [GitHub Copilot](https://github.com/features/copilot)         | Supported |
+
+The `plugins` CLI currently installs the plugin automatically for Claude Code,
+Cursor, and OpenAI Codex. Grok Build and GitHub Copilot can use the repository's
+plugin manifest, skills, MCP configuration, and instruction files directly.
 
 ## Available skills
 
-| Skill | Description | Source |
-|---|---|---|
+| Skill                                                             | Description                                                                                                                    | Source        |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------- |
 | [`liveblocks-best-practices`](./skills/liveblocks-best-practices) | Best practices for Liveblocks rooms, auth, presence, Storage, comments, notifications, text editors, React patterns, and more. | Authored here |
-| [`yjs-best-practices`](./skills/yjs-best-practices) | Guidance for Yjs data modeling, updates, performance, subdocuments, providers, and common debugging issues. | Authored here |
+| [`yjs-best-practices`](./skills/yjs-best-practices)               | Guidance for Yjs data modeling, updates, performance, subdocuments, providers, and common debugging issues.                    | Authored here |
 
 ## MCP server
 

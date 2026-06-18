@@ -1,0 +1,27 @@
+{
+  "name": "liveblocks",
+  "version": "1.0.0",
+  "description": "Realtime collaboration for your app. Add agent skills and MCP server configuration for Liveblocks and Yjs.",
+  "author": {
+    "name": "Liveblocks",
+    "email": "support@liveblocks.io",
+    "url": "https://liveblocks.io"
+  },
+  "homepage": "https://liveblocks.io",
+  "repository": "https://github.com/liveblocks/liveblocks-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "liveblocks",
+    "yjs",
+    "realtime",
+    "collaboration",
+    "multiplayer",
+    "comments",
+    "notifications",
+    "agents",
+    "react",
+    "tiptap",
+    "lexical",
+    "mcp"
+  ]
+}
